@@ -18,12 +18,12 @@ public class ConfigClient {
     }
 
 
-    @Value("${welcome}")
-    String welcome ;
+    @Value("${welcomePath}")
+    String welcom ;
 
     @RequestMapping("/helloConfig")
     public String helloConfig(){
-        return "helloConfig "+welcome ;
+        return "helloConfig "+welcom ;
     }
 
 }
